@@ -1,6 +1,6 @@
 # ApmPluralsight
 
-Acme Product Management app created along with @DeborahK's [Angular Getting Started](https://github.com/DeborahK/Angular-GettingStarted) tutorial. I modified it to use more recent versions of Angular (v5) and Bootstrap (v4)
+Acme Product Management app created along with @DeborahK's [Angular Getting Started](https://github.com/DeborahK/Angular-GettingStarted) tutorial. I modified it to use more recent versions of Angular (v5) and Bootstrap (v4). For example, I replaced the deprecated `glyphicon`, with [Font Awesome](https://fontawesome.com/) stars via [angular-font-awesome](https://github.com/baruchvlz/angular-font-awesome).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
