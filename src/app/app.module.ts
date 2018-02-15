@@ -6,15 +6,19 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { StarComponent } from './shared/star.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
-    ConvertToSpacesPipe
+    ConvertToSpacesPipe,
+    StarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AngularFontAwesomeModule,
     NgbModule.forRoot(),
   ],
   providers: [],
