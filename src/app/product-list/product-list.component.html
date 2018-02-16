@@ -1,4 +1,4 @@
-<div>
+<div style="margin: 10px 0px">
   <div class="card-header">{{ pageTitle }}</div>
   <div class='card-body'>
     <div class='row'>
@@ -39,7 +39,7 @@
                  *ngIf='showImage'
                  >
           </td>
-          <td>{{ product.productName }}</td>
+          <td class="text-primary">{{ product.productName }}</td>
           <td>{{ product.productCode | lowercase | convertToSpaces: '-' }}</td>
           <td>{{ product.releaseDate }}</td>
           <td>{{ product.price | currency:'USD':symbol:'2.2-2' }}</td>
