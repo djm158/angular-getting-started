@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProductsModule } from './products/products.module';
@@ -16,7 +15,6 @@ import { ProductsModule } from './products/products.module';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
