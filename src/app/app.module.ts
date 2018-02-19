@@ -12,6 +12,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { StarComponent } from './shared/star.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ProductGuardService } from './product-guard.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,13 +31,13 @@ import { WelcomeComponent } from './welcome/welcome.component';
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:id', component: ProductListComponent },
+      { path: 'products/:id', component: ProductDetailComponent, canActivate: [ProductGuardService] },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
-  providers: [],
+  providers: [ProductGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

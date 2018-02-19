@@ -1,3 +1,6 @@
 <div class="card" *ngIf='product'>
   <h3 class="card-header">{{ pageTitle + ': ' + product.productName }}</h3>
+  <a class="btn btn-light" style="width: 80px;" (click)="onBack()" >
+    <fa name="chevron-left"></fa>Back
+  </a>
 </div>
